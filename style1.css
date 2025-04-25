@@ -1,0 +1,176 @@
+/* universal selecter */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+
+}
+
+/* Body */
+body {
+    background: #5c5d5e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px #de0c0ce0;
+
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    width: 80%;
+    height: 90vh;
+    background: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+/*  yah esliye he agar scrorable history nahi chahiye  */
+/* Left Side - History Panel */
+/* .history-panel {
+    width: 25%;
+    background: #8b9bc5;
+    color: white;
+    padding: 20px;
+    text-align: left;
+} */
+
+/* history panel  */
+.history-panel {
+    width: 25%;
+    height: 100%; 
+    overflow-y: auto;       /*   for scrorolble histry   */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #8b9bc5;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.history-panel h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+/* ya esliye he ki agar beetter look chahiye  */
+/* #history-list li {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+} */
+
+
+/* Right Side - Main Content */
+.main-content {
+    width: 75%;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Form */
+#essay-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    resize: none;
+    box-shadow: 0px 4px 10px #de0c0ce0;
+
+}
+
+/* Submit Button */
+#need{
+     align-items:start;
+     justify-content: start;
+}
+button {
+    display: flex;
+    align-items: left;
+    justify-content:left;
+    gap: 2px;
+    background: linear-gradient(135deg, #0B6E4F, #0E4428);
+    box-shadow: 0px 4px 10px #de0c0ce0;
+
+    color: white;
+    padding: 12px 100px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0E4428, #073722);
+    transform: scale(1.50);
+    cursor: pointer;
+}
+
+/* Grading Results  pannal */
+.result {
+    margin-top: 25px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    background: #F5F7FA;
+    border-radius: 12px; 
+    box-shadow: 0px 4px 10px #de0c0ce0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #102A43;
+    margin-bottom: 15px;
+}
+
+
+/* Score and Feedback Box */
+.score-box {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-box p {
+    margin: 6px 0;
+    font-size: 16px;
+    color: #333;
+}
